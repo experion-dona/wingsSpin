@@ -1,0 +1,79 @@
+<form [formGroup]="spinConfigurationForm">
+  
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="row mb-2">
+        <label class="col-sm-5">Section1 : </label>
+        <input type="text" class="col-sm-7 form-control" formControlName="section1" (change)="onSectionPointChange(1)" />
+      </div>
+      <div class="row mb-2">
+        <label class="col-sm-5 mt-3">Section2 : </label>
+        <input type="text" class="col-sm-7 form-control  mt-3 mb-3" formControlName="section2" (change)="onSectionPointChange(2)"
+        />
+      </div>
+      <div class="row mb-2">
+        <label class="col-sm-5 text-left  mt-3 mb-3">Section3 : </label>
+        <input type="text" class="col-sm-7 form-control  mt-3 mb-3" formControlName="section3" (change)="onSectionPointChange(3)"
+        />
+      </div>
+      <div class="row mb-2">
+        <label class="col-sm-5 text-left  mt-3 mb-3">Section4 : </label>
+        <input type="text" class="col-sm-7 form-control  mt-3 mb-3" formControlName="section4" (change)="onSectionPointChange(4)"
+        />
+      </div>
+     
+      <div class="row mb-2">
+          <label class="col-sm-5 text-left mt-3 mb-3">Section5 : </label>
+          <input type="text" class="col-sm-7 form-control" formControlName="section5" (change)="onSectionPointChange(5)" />
+        </div>
+        <div class="row mb-2">
+          <label class="col-sm-5 text-left  mt-3 mb-3">Section6 : </label>
+          <input type="text" class="col-sm-7 form-control  mt-3 mb-3" formControlName="section6" (change)="onSectionPointChange(6)"
+          />
+        </div>
+        <div class="row mb-2">
+          <label class="col-sm-5 text-left  mt-3 mb-3">Section7 : </label>
+          <input type="text" class="col-sm-7 form-control  mt-3 mb-3" formControlName="section7" (change)="onSectionPointChange(7)"
+          />
+        </div>
+        <div class="row mb-2">
+          <label class="col-sm-5 text-left  mt-3 mb-3">Section8 : </label>
+          <input type="text" class="col-sm-7 form-control  mt-3 mb-3" formControlName="section8" (change)="onSectionPointChange(8)"
+          />
+        </div>
+        <div class="row mb-2">
+            <label class="col-sm-5 text-left mt-3 mb-3">Section9 : </label>
+            <input type="text" class="col-sm-7 form-control" formControlName="section9" (change)="onSectionPointChange(9)" />
+          </div>
+          <div class="row mb-2">
+            <label class="col-sm-5 text-left  mt-3 mb-3">Section10 : </label>
+            <input type="text" class="col-sm-7 form-control  mt-3 mb-3" formControlName="section10" (change)="onSectionPointChange(10)"
+            />
+          </div>
+          <div class="row mb-2">
+            <label class="col-sm-5 text-left  mt-3 mb-3">Section11 : </label>
+            <input type="text" class="col-sm-7 form-control  mt-3 mb-3" formControlName="section11" (change)="onSectionPointChange(11)"
+            />
+          </div>
+          <div class="row mb-2">
+            <label class="col-sm-5 text-left  mt-3 mb-3">Section12 : </label>
+            <input type="text" class="col-sm-7 form-control  mt-3 mb-3" formControlName="section12" (change)="onSectionPointChange(12)"
+            />
+          </div>
+         
+    </div>
+    <div class="col-sm-6">
+
+      <body>
+        <header class="EaselJS">
+          <h1>Spin the Wheel configuration</h1>
+        </header>
+
+        <div>
+          <canvas id="testCanvas" width="500" height="500"></canvas><br/>
+          <a class="button" [href]="dataUrl" (click)="onSubmit()" download="spinWheel.png">Download</a>
+        </div>
+      </body>
+    </div>
+  </div>
+</form>
